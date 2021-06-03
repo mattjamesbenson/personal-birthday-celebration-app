@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD906474266979DB00715AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD906473266979DB00715AD9 /* AppDelegate.swift */; };
+		AD906476266979DB00715AD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD906475266979DB00715AD9 /* SceneDelegate.swift */; };
+		AD906478266979DB00715AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD906477266979DB00715AD9 /* ViewController.swift */; };
+		AD90647B266979DB00715AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD906479266979DB00715AD9 /* Main.storyboard */; };
+		AD90647D266979DC00715AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD90647C266979DC00715AD9 /* Assets.xcassets */; };
+		AD906480266979DC00715AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD90647E266979DC00715AD9 /* LaunchScreen.storyboard */; };
+		AD90648B266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90648A266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift */; };
+		AD906496266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD906495266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD906487266979DC00715AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD906468266979DB00715AD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD90646F266979DB00715AD9;
+			remoteInfo = "Daisy's Birthday App";
+		};
+		AD906492266979DC00715AD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD906468266979DB00715AD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD90646F266979DB00715AD9;
+			remoteInfo = "Daisy's Birthday App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD906470266979DB00715AD9 /* Daisy's Birthday App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daisy's Birthday App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD906473266979DB00715AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD906475266979DB00715AD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AD906477266979DB00715AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD90647A266979DB00715AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD90647C266979DC00715AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD90647F266979DC00715AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD906481266979DC00715AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD906486266979DC00715AD9 /* Daisy's Birthday AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daisy's Birthday AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD90648A266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daisy_s_Birthday_AppTests.swift; sourceTree = "<group>"; };
+		AD90648C266979DC00715AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD906491266979DC00715AD9 /* Daisy's Birthday AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daisy's Birthday AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD906495266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daisy_s_Birthday_AppUITests.swift; sourceTree = "<group>"; };
+		AD906497266979DC00715AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD90646D266979DB00715AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD906483266979DC00715AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD90648E266979DC00715AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD906467266979DB00715AD9 = {
+			isa = PBXGroup;
+			children = (
+				AD906472266979DB00715AD9 /* Daisy's Birthday App */,
+				AD906489266979DC00715AD9 /* Daisy's Birthday AppTests */,
+				AD906494266979DC00715AD9 /* Daisy's Birthday AppUITests */,
+				AD906471266979DB00715AD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD906471266979DB00715AD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD906470266979DB00715AD9 /* Daisy's Birthday App.app */,
+				AD906486266979DC00715AD9 /* Daisy's Birthday AppTests.xctest */,
+				AD906491266979DC00715AD9 /* Daisy's Birthday AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD906472266979DB00715AD9 /* Daisy's Birthday App */ = {
+			isa = PBXGroup;
+			children = (
+				AD906473266979DB00715AD9 /* AppDelegate.swift */,
+				AD906475266979DB00715AD9 /* SceneDelegate.swift */,
+				AD906477266979DB00715AD9 /* ViewController.swift */,
+				AD906479266979DB00715AD9 /* Main.storyboard */,
+				AD90647C266979DC00715AD9 /* Assets.xcassets */,
+				AD90647E266979DC00715AD9 /* LaunchScreen.storyboard */,
+				AD906481266979DC00715AD9 /* Info.plist */,
+			);
+			path = "Daisy's Birthday App";
+			sourceTree = "<group>";
+		};
+		AD906489266979DC00715AD9 /* Daisy's Birthday AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD90648A266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift */,
+				AD90648C266979DC00715AD9 /* Info.plist */,
+			);
+			path = "Daisy's Birthday AppTests";
+			sourceTree = "<group>";
+		};
+		AD906494266979DC00715AD9 /* Daisy's Birthday AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD906495266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift */,
+				AD906497266979DC00715AD9 /* Info.plist */,
+			);
+			path = "Daisy's Birthday AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD90646F266979DB00715AD9 /* Daisy's Birthday App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD90649A266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday App" */;
+			buildPhases = (
+				AD90646C266979DB00715AD9 /* Sources */,
+				AD90646D266979DB00715AD9 /* Frameworks */,
+				AD90646E266979DB00715AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daisy's Birthday App";
+			productName = "Daisy's Birthday App";
+			productReference = AD906470266979DB00715AD9 /* Daisy's Birthday App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD906485266979DC00715AD9 /* Daisy's Birthday AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD90649D266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppTests" */;
+			buildPhases = (
+				AD906482266979DC00715AD9 /* Sources */,
+				AD906483266979DC00715AD9 /* Frameworks */,
+				AD906484266979DC00715AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD906488266979DC00715AD9 /* PBXTargetDependency */,
+			);
+			name = "Daisy's Birthday AppTests";
+			productName = "Daisy's Birthday AppTests";
+			productReference = AD906486266979DC00715AD9 /* Daisy's Birthday AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD906490266979DC00715AD9 /* Daisy's Birthday AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9064A0266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppUITests" */;
+			buildPhases = (
+				AD90648D266979DC00715AD9 /* Sources */,
+				AD90648E266979DC00715AD9 /* Frameworks */,
+				AD90648F266979DC00715AD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD906493266979DC00715AD9 /* PBXTargetDependency */,
+			);
+			name = "Daisy's Birthday AppUITests";
+			productName = "Daisy's Birthday AppUITests";
+			productReference = AD906491266979DC00715AD9 /* Daisy's Birthday AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD906468266979DB00715AD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AD90646F266979DB00715AD9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					AD906485266979DC00715AD9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = AD90646F266979DB00715AD9;
+					};
+					AD906490266979DC00715AD9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = AD90646F266979DB00715AD9;
+					};
+				};
+			};
+			buildConfigurationList = AD90646B266979DB00715AD9 /* Build configuration list for PBXProject "Daisy's Birthday App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD906467266979DB00715AD9;
+			productRefGroup = AD906471266979DB00715AD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD90646F266979DB00715AD9 /* Daisy's Birthday App */,
+				AD906485266979DC00715AD9 /* Daisy's Birthday AppTests */,
+				AD906490266979DC00715AD9 /* Daisy's Birthday AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD90646E266979DB00715AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD906480266979DC00715AD9 /* LaunchScreen.storyboard in Resources */,
+				AD90647D266979DC00715AD9 /* Assets.xcassets in Resources */,
+				AD90647B266979DB00715AD9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD906484266979DC00715AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD90648F266979DC00715AD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD90646C266979DB00715AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD906478266979DB00715AD9 /* ViewController.swift in Sources */,
+				AD906474266979DB00715AD9 /* AppDelegate.swift in Sources */,
+				AD906476266979DB00715AD9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD906482266979DC00715AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD90648B266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD90648D266979DC00715AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD906496266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD906488266979DC00715AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD90646F266979DB00715AD9 /* Daisy's Birthday App */;
+			targetProxy = AD906487266979DC00715AD9 /* PBXContainerItemProxy */;
+		};
+		AD906493266979DC00715AD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD90646F266979DB00715AD9 /* Daisy's Birthday App */;
+			targetProxy = AD906492266979DC00715AD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD906479266979DB00715AD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD90647A266979DB00715AD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD90647E266979DC00715AD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD90647F266979DC00715AD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD906498266979DC00715AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD906499266979DC00715AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD90649B266979DC00715AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Daisy's Birthday App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbensonapps.Daisy-s-Birthday-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD90649C266979DC00715AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Daisy's Birthday App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbensonapps.Daisy-s-Birthday-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD90649E266979DC00715AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Daisy's Birthday AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbensonapps.Daisy-s-Birthday-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daisy's Birthday App.app/Daisy's Birthday App";
+			};
+			name = Debug;
+		};
+		AD90649F266979DC00715AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Daisy's Birthday AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbensonapps.Daisy-s-Birthday-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daisy's Birthday App.app/Daisy's Birthday App";
+			};
+			name = Release;
+		};
+		AD9064A1266979DC00715AD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Daisy's Birthday AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbensonapps.Daisy-s-Birthday-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Daisy's Birthday App";
+			};
+			name = Debug;
+		};
+		AD9064A2266979DC00715AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Daisy's Birthday AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattbensonapps.Daisy-s-Birthday-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Daisy's Birthday App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD90646B266979DB00715AD9 /* Build configuration list for PBXProject "Daisy's Birthday App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD906498266979DC00715AD9 /* Debug */,
+				AD906499266979DC00715AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD90649A266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD90649B266979DC00715AD9 /* Debug */,
+				AD90649C266979DC00715AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD90649D266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD90649E266979DC00715AD9 /* Debug */,
+				AD90649F266979DC00715AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9064A0266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9064A1266979DC00715AD9 /* Debug */,
+				AD9064A2266979DC00715AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD906468266979DB00715AD9 /* Project object */;
+}
