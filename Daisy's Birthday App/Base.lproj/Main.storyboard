@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Daisy_s_Birthday_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{days}} days since this app was revealed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Z-zw-bvZ">
+                                <rect key="frame" x="25" y="621" width="364" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="F4p-Tp-ai7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="28" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx9-D9-zGd">
+                                <rect key="frame" x="25" y="109" width="364" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="zFE-a9-7Sf"/>
+                                </constraints>
+                                <string key="text">Today is a very special day. It's one that symbolises the birth of a magnificent person. Daisy, you're my best friend in the whole wide 🌍, and you always will be.  👫   That's why I've designed this app to wish you a Happy Birthday automatically, only on the actual day of your Birthday! 🎂
+
+It also calculates your age automatically, so each year you open this app, it'll remind you of how old you're getting (lol soz xoxo). When it's not your Birthday however... well, it'll just tell you how many more days left until the next one so we can count down the days until celebrating! 🎉</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYV-Ov-6CZ">
+                                <rect key="frame" x="25" y="269" width="364" height="202.5"/>
+                                <string key="text">Well... only {{days}} days left to go until your {{age}} Birthday! 🤩🎁 You must be really bored if you're on this app. Go and do something productive lol. 😘  Love you always - Matt x </string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{{days}} DAYS LEFT!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oav-xO-z0a">
+                                <rect key="frame" x="25" y="569" width="364" height="101.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLH-Oa-biG">
+                                <rect key="frame" x="88" y="50" width="239" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3ls-Ys-XRN"/>
+                                    <constraint firstAttribute="width" constant="90" id="kts-oj-M8z"/>
+                                </constraints>
+                                <string key="text">Daisy's Birthday
+Reminder 🌸</string>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="27"/>
+                                <color key="highlightedColor" name="AccentColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love you with all my heart Daisy. HAPPY {{age}} BIRTHDAY! 🥳🎁🍾" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ave-DU-01Z">
+                                <rect key="frame" x="25" y="691" width="364" height="80"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.78708679369140067" blue="0.89562743666377076" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z2Z-zw-bvZ" secondAttribute="trailing" constant="25" id="2M5-Yk-y7m"/>
+                            <constraint firstItem="FYV-Ov-6CZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35B-G7-HeC"/>
+                            <constraint firstItem="SLH-Oa-biG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="8E3-6v-0lH"/>
+                            <constraint firstItem="Z2Z-zw-bvZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Fxb-vw-RE8"/>
+                            <constraint firstItem="FYV-Ov-6CZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="GuZ-98-Eoz"/>
+                            <constraint firstAttribute="trailing" secondItem="FYV-Ov-6CZ" secondAttribute="trailing" constant="25" id="Q6s-H4-Z4S"/>
+                            <constraint firstItem="Nx9-D9-zGd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="Vvs-IT-W0t"/>
+                            <constraint firstItem="FYV-Ov-6CZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="Wzc-nC-FSW"/>
+                            <constraint firstItem="oav-xO-z0a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="XYd-hh-vaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLH-Oa-biG" secondAttribute="trailing" constant="25" id="bL8-tx-HUq"/>
+                            <constraint firstItem="Nx9-D9-zGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c3i-KE-gEW"/>
+                            <constraint firstAttribute="bottom" secondItem="Z2Z-zw-bvZ" secondAttribute="bottom" constant="-125" id="cnG-5A-jAt"/>
+                            <constraint firstAttribute="trailing" secondItem="ave-DU-01Z" secondAttribute="trailing" constant="25" id="eHg-Cn-TiV"/>
+                            <constraint firstItem="SLH-Oa-biG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="hOW-8X-0Rg"/>
+                            <constraint firstAttribute="trailing" secondItem="Nx9-D9-zGd" secondAttribute="trailing" constant="25" id="jrO-bD-0Ds"/>
+                            <constraint firstItem="ave-DU-01Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="mLR-4D-Ozf"/>
+                            <constraint firstAttribute="trailing" secondItem="oav-xO-z0a" secondAttribute="trailing" constant="25" id="mv9-dB-gp4"/>
+                            <constraint firstItem="Nx9-D9-zGd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="qiU-IS-WRh"/>
+                            <constraint firstAttribute="bottom" secondItem="ave-DU-01Z" secondAttribute="bottom" constant="125" id="t5b-u2-GMm"/>
+                            <constraint firstItem="oav-xO-z0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="525" id="txr-iT-fjL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AgeMessage" destination="ave-DU-01Z" id="FYh-uM-qd8"/>
+                        <outlet property="DaysLeftMessage" destination="oav-xO-z0a" id="ZRL-D4-TpY"/>
+                        <outlet property="DaysSinceStartMessage" destination="Z2Z-zw-bvZ" id="tht-fh-TM8"/>
+                        <outlet property="Message" destination="Nx9-D9-zGd" id="NMP-yh-8hh"/>
+                        <outlet property="WaitingMessage" destination="FYV-Ov-6CZ" id="XCh-qS-u3f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="35" y="88"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
