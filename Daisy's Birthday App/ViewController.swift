@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        Birth Date
-        let dobStringDate = "2000-06-06"
+        let dobStringDate = "2000-06-09"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateOfBirth = dateFormatter.date(from: dobStringDate)

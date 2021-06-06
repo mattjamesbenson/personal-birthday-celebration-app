@@ -132,7 +132,7 @@ Reminder 🌸</string>
                             <constraint firstItem="diH-lN-lYq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="600" id="pwF-74-6DN"/>
                             <constraint firstItem="TU6-hP-tdk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="qEC-Tk-O0r"/>
                             <constraint firstItem="Nx9-D9-zGd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="qiU-IS-WRh"/>
-                            <constraint firstItem="oav-xO-z0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="430" id="txr-iT-fjL"/>
+                            <constraint firstItem="oav-xO-z0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="415" id="txr-iT-fjL"/>
                             <constraint firstAttribute="trailing" secondItem="22Q-bK-SyJ" secondAttribute="trailing" constant="50" id="wNZ-Zd-ESR"/>
                             <constraint firstItem="ave-DU-01Z" firstAttribute="bottom" secondItem="Nx9-D9-zGd" secondAttribute="bottom" constant="35" id="wvA-f9-8PD"/>
                         </constraints>
