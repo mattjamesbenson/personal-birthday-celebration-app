@@ -64,18 +64,18 @@ Reminder 🌸</string>
                                 <color key="highlightedColor" name="AccentColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love you with all my heart Daisy. HAPPY {{age}} BIRTHDAY! 🥳🎁🍾" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ave-DU-01Z">
-                                <rect key="frame" x="25" y="694" width="364" height="72"/>
+                                <rect key="frame" x="25" y="687" width="364" height="72"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding you an inspirational quote..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-lN-lYq">
-                                <rect key="frame" x="25" y="565" width="364" height="20.5"/>
+                                <rect key="frame" x="25" y="600" width="364" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="16"/>
                                 <color key="textColor" red="0.56973687395058958" green="0.39426334728242485" blue="0.60619870580808088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created and designed by Matt James Benson." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-hP-tdk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created and designed by Matt James Benson" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-hP-tdk">
                                 <rect key="frame" x="25" y="646" width="364" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="W6q-8K-S1Z"/>
@@ -85,7 +85,7 @@ Reminder 🌸</string>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22Q-bK-SyJ">
-                                <rect key="frame" x="50" y="690" width="314" height="50"/>
+                                <rect key="frame" x="50" y="730" width="314" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pYa-gE-oUy"/>
@@ -126,15 +126,15 @@ Reminder 🌸</string>
                             <constraint firstItem="22Q-bK-SyJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="fDa-c3-R3G"/>
                             <constraint firstItem="SLH-Oa-biG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="hOW-8X-0Rg"/>
                             <constraint firstAttribute="trailing" secondItem="Nx9-D9-zGd" secondAttribute="trailing" constant="25" id="jrO-bD-0Ds"/>
-                            <constraint firstItem="22Q-bK-SyJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="690" id="keW-vz-sbN"/>
+                            <constraint firstItem="22Q-bK-SyJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="730" id="keW-vz-sbN"/>
                             <constraint firstItem="ave-DU-01Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="mLR-4D-Ozf"/>
                             <constraint firstAttribute="trailing" secondItem="oav-xO-z0a" secondAttribute="trailing" constant="25" id="mv9-dB-gp4"/>
-                            <constraint firstItem="diH-lN-lYq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="565" id="pwF-74-6DN"/>
+                            <constraint firstItem="diH-lN-lYq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="600" id="pwF-74-6DN"/>
                             <constraint firstItem="TU6-hP-tdk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="qEC-Tk-O0r"/>
                             <constraint firstItem="Nx9-D9-zGd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="qiU-IS-WRh"/>
-                            <constraint firstAttribute="bottom" secondItem="ave-DU-01Z" secondAttribute="bottom" constant="130" id="t5b-u2-GMm"/>
                             <constraint firstItem="oav-xO-z0a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="430" id="txr-iT-fjL"/>
                             <constraint firstAttribute="trailing" secondItem="22Q-bK-SyJ" secondAttribute="trailing" constant="50" id="wNZ-Zd-ESR"/>
+                            <constraint firstItem="ave-DU-01Z" firstAttribute="bottom" secondItem="Nx9-D9-zGd" secondAttribute="bottom" constant="35" id="wvA-f9-8PD"/>
                         </constraints>
                     </view>
                     <connections>
