@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SWXMLHash
 
 class ViewController: UIViewController {
 
@@ -14,12 +15,56 @@ class ViewController: UIViewController {
     @IBOutlet weak var DaysLeftMessage: UILabel!
     @IBOutlet weak var DaysSinceStartMessage: UILabel!
     @IBOutlet weak var AgeMessage: UILabel!
+    @IBOutlet weak var Quote: UILabel!
+    @IBOutlet weak var RefreshQuote: UIButton!
+    
+    @IBAction func refreshQuote(_ sender: UIButton) {
+//        API to get inspirational quote
+        let inspirationalQuoteUrl = URL(string: "https://zenquotes.io/api/random");
+            
+        var inspirationalQuoteRequest = URLRequest(url:inspirationalQuoteUrl!)
+        
+        inspirationalQuoteRequest.httpMethod = "POST"
+        
+        let inspirationalQuoteTask = URLSession.shared.dataTask(with: inspirationalQuoteRequest) { data, response, error in
+            guard let quoteData = data,
+                let response = response as? HTTPURLResponse,
+                error == nil else {                                              // check for fundamental networking error
+                print("error", error ?? "Unknown error")
+                return
+            }
+
+            guard (200 ... 299) ~= response.statusCode else {                    // check for http errors
+                print("statusCode should be 2xx, but is \(response.statusCode)")
+                print("response = \(response)")
+                return
+            }
+            
+            let responseString = String(data: quoteData, encoding: .utf8)
+            let tmpObject: AnyObject? = responseString as AnyObject
+            
+            if let _: AnyObject = tmpObject {
+                DispatchQueue.main.async {
+                    let responseJson = responseString!.data(using: .utf8)!
+                    let json = try! JSONSerialization.jsonObject(with: responseJson)
+                    
+                    let results = json as! [[String:Any]]
+                    for item in results {
+                        self.Quote.text = "\(item["q"]!)" + " - " + "\(item["a"]!)"
+                        
+                    }
+                }
+            }
+        }
+        
+        inspirationalQuoteTask.resume()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        Birth Date
-        let dobStringDate = "2000-06-09"
+        let dobStringDate = "2000-06-06"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateOfBirth = dateFormatter.date(from: dobStringDate)
@@ -66,6 +111,8 @@ class ViewController: UIViewController {
             AgeMessage.isHidden = false;
             WaitingMessage.isHidden = true;
             DaysLeftMessage.isHidden = true;
+            Quote.isHidden = true;
+            RefreshQuote.isHidden = true;
             
             yearsOldString = "\(yearsOldCompoments.year!)" + ageExtension.uppercased()
           
@@ -77,6 +124,8 @@ class ViewController: UIViewController {
             AgeMessage.isHidden = true;
             WaitingMessage.isHidden = false;
             DaysLeftMessage.isHidden = false;
+            Quote.isHidden = false;
+            RefreshQuote.isHidden = false;
             
             yearsOldString = "\(yearsOldCompoments.year!)" + ageExtension
             
@@ -85,7 +134,49 @@ class ViewController: UIViewController {
             WaitingMessage.text = WaitingMessage.text?.replacingOccurrences(of: "{{days}}", with: "\(daysUntilBirthday)")
             
             DaysLeftMessage.text = DaysLeftMessage.text?.replacingOccurrences(of: "{{days}}", with: "\(daysUntilBirthday)")
+            
+//            API to get inspirational quote
+            let inspirationalQuoteUrl = URL(string: "https://zenquotes.io/api/random");
+//            let inspirationalQuoteUrl = URL(string: "AAAA");
+                
+            var inspirationalQuoteRequest = URLRequest(url:inspirationalQuoteUrl!)
+            
+            inspirationalQuoteRequest.httpMethod = "POST"
+            
+            let inspirationalQuoteTask = URLSession.shared.dataTask(with: inspirationalQuoteRequest) {
+                data, response, error in
+                
+                guard let quoteData = data,
+                    let response = response as? HTTPURLResponse,
+                    error == nil else {                                              // check for fundamental networking error
+                    print("error", error ?? "Unknown error")
+                    return
+                }
+
+                guard (200 ... 299) ~= response.statusCode else {                    // check for http errors
+                    print("statusCode should be 2xx, but is \(response.statusCode)")
+                    print("response = \(response)")
+                    return
+                }
+                
+                let responseString = String(data: quoteData, encoding: .utf8)
+                let tmpObject: AnyObject? = responseString as AnyObject
+                
+                if let _: AnyObject = tmpObject {
+                    DispatchQueue.main.async {
+                        let responseJson = responseString!.data(using: .utf8)!
+                        let json = try! JSONSerialization.jsonObject(with: responseJson)
+                        
+                        let results = json as! [[String:Any]]
+                        for item in results {
+                            self.Quote.text = "\(item["q"]!)" + " - " + "\(item["a"]!)"
+                            
+                        }
+                    }
+                }
+            }
+            
+            inspirationalQuoteTask.resume()
         }
     }
 }
-

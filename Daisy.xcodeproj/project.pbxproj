@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		AD906480266979DC00715AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD90647E266979DC00715AD9 /* LaunchScreen.storyboard */; };
 		AD90648B266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90648A266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift */; };
 		AD906496266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD906495266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift */; };
+		ADFF4262266D02F900752A0E /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = ADFF4261266D02F900752A0E /* SWXMLHash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD906470266979DB00715AD9 /* Daisy's Birthday App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daisy's Birthday App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD906470266979DB00715AD9 /* Daisy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daisy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD906473266979DB00715AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD906475266979DB00715AD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD906477266979DB00715AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,10 +44,10 @@
 		AD90647C266979DC00715AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD90647F266979DC00715AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD906481266979DC00715AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD906486266979DC00715AD9 /* Daisy's Birthday AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daisy's Birthday AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD906486266979DC00715AD9 /* DaisyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaisyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD90648A266979DC00715AD9 /* Daisy_s_Birthday_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daisy_s_Birthday_AppTests.swift; sourceTree = "<group>"; };
 		AD90648C266979DC00715AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD906491266979DC00715AD9 /* Daisy's Birthday AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daisy's Birthday AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD906491266979DC00715AD9 /* DaisyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaisyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD906495266979DC00715AD9 /* Daisy_s_Birthday_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daisy_s_Birthday_AppUITests.swift; sourceTree = "<group>"; };
 		AD906497266979DC00715AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFF4262266D02F900752A0E /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +91,9 @@
 		AD906471266979DB00715AD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD906470266979DB00715AD9 /* Daisy's Birthday App.app */,
-				AD906486266979DC00715AD9 /* Daisy's Birthday AppTests.xctest */,
-				AD906491266979DC00715AD9 /* Daisy's Birthday AppUITests.xctest */,
+				AD906470266979DB00715AD9 /* Daisy.app */,
+				AD906486266979DC00715AD9 /* DaisyTests.xctest */,
+				AD906491266979DC00715AD9 /* DaisyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD90646F266979DB00715AD9 /* Daisy's Birthday App */ = {
+		AD90646F266979DB00715AD9 /* Daisy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD90649A266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday App" */;
+			buildConfigurationList = AD90649A266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy" */;
 			buildPhases = (
 				AD90646C266979DB00715AD9 /* Sources */,
 				AD90646D266979DB00715AD9 /* Frameworks */,
@@ -143,14 +145,17 @@
 			);
 			dependencies = (
 			);
-			name = "Daisy's Birthday App";
+			name = Daisy;
+			packageProductDependencies = (
+				ADFF4261266D02F900752A0E /* SWXMLHash */,
+			);
 			productName = "Daisy's Birthday App";
-			productReference = AD906470266979DB00715AD9 /* Daisy's Birthday App.app */;
+			productReference = AD906470266979DB00715AD9 /* Daisy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD906485266979DC00715AD9 /* Daisy's Birthday AppTests */ = {
+		AD906485266979DC00715AD9 /* DaisyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD90649D266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppTests" */;
+			buildConfigurationList = AD90649D266979DC00715AD9 /* Build configuration list for PBXNativeTarget "DaisyTests" */;
 			buildPhases = (
 				AD906482266979DC00715AD9 /* Sources */,
 				AD906483266979DC00715AD9 /* Frameworks */,
@@ -161,14 +166,14 @@
 			dependencies = (
 				AD906488266979DC00715AD9 /* PBXTargetDependency */,
 			);
-			name = "Daisy's Birthday AppTests";
+			name = DaisyTests;
 			productName = "Daisy's Birthday AppTests";
-			productReference = AD906486266979DC00715AD9 /* Daisy's Birthday AppTests.xctest */;
+			productReference = AD906486266979DC00715AD9 /* DaisyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AD906490266979DC00715AD9 /* Daisy's Birthday AppUITests */ = {
+		AD906490266979DC00715AD9 /* DaisyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD9064A0266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppUITests" */;
+			buildConfigurationList = AD9064A0266979DC00715AD9 /* Build configuration list for PBXNativeTarget "DaisyUITests" */;
 			buildPhases = (
 				AD90648D266979DC00715AD9 /* Sources */,
 				AD90648E266979DC00715AD9 /* Frameworks */,
@@ -179,9 +184,9 @@
 			dependencies = (
 				AD906493266979DC00715AD9 /* PBXTargetDependency */,
 			);
-			name = "Daisy's Birthday AppUITests";
+			name = DaisyUITests;
 			productName = "Daisy's Birthday AppUITests";
-			productReference = AD906491266979DC00715AD9 /* Daisy's Birthday AppUITests.xctest */;
+			productReference = AD906491266979DC00715AD9 /* DaisyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD90646B266979DB00715AD9 /* Build configuration list for PBXProject "Daisy's Birthday App" */;
+			buildConfigurationList = AD90646B266979DB00715AD9 /* Build configuration list for PBXProject "Daisy" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,13 +220,16 @@
 				Base,
 			);
 			mainGroup = AD906467266979DB00715AD9;
+			packageReferences = (
+				ADFF4260266D02F900752A0E /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			productRefGroup = AD906471266979DB00715AD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD90646F266979DB00715AD9 /* Daisy's Birthday App */,
-				AD906485266979DC00715AD9 /* Daisy's Birthday AppTests */,
-				AD906490266979DC00715AD9 /* Daisy's Birthday AppUITests */,
+				AD90646F266979DB00715AD9 /* Daisy */,
+				AD906485266979DC00715AD9 /* DaisyTests */,
+				AD906490266979DC00715AD9 /* DaisyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		AD906488266979DC00715AD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD90646F266979DB00715AD9 /* Daisy's Birthday App */;
+			target = AD90646F266979DB00715AD9 /* Daisy */;
 			targetProxy = AD906487266979DC00715AD9 /* PBXContainerItemProxy */;
 		};
 		AD906493266979DC00715AD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD90646F266979DB00715AD9 /* Daisy's Birthday App */;
+			target = AD90646F266979DB00715AD9 /* Daisy */;
 			targetProxy = AD906492266979DC00715AD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -366,10 +374,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -421,9 +430,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -437,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7BNQVU55M;
 				INFOPLIST_FILE = "Daisy's Birthday App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H7BNQVU55M;
 				INFOPLIST_FILE = "Daisy's Birthday App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,7 +496,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daisy's Birthday App.app/Daisy's Birthday App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daisy.app/Daisy";
 			};
 			name = Debug;
 		};
@@ -505,7 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daisy's Birthday App.app/Daisy's Birthday App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daisy.app/Daisy";
 			};
 			name = Release;
 		};
@@ -550,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD90646B266979DB00715AD9 /* Build configuration list for PBXProject "Daisy's Birthday App" */ = {
+		AD90646B266979DB00715AD9 /* Build configuration list for PBXProject "Daisy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD906498266979DC00715AD9 /* Debug */,
@@ -559,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD90649A266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday App" */ = {
+		AD90649A266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD90649B266979DC00715AD9 /* Debug */,
@@ -568,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD90649D266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppTests" */ = {
+		AD90649D266979DC00715AD9 /* Build configuration list for PBXNativeTarget "DaisyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD90649E266979DC00715AD9 /* Debug */,
@@ -577,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD9064A0266979DC00715AD9 /* Build configuration list for PBXNativeTarget "Daisy's Birthday AppUITests" */ = {
+		AD9064A0266979DC00715AD9 /* Build configuration list for PBXNativeTarget "DaisyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD9064A1266979DC00715AD9 /* Debug */,
@@ -587,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADFF4260266D02F900752A0E /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADFF4261266D02F900752A0E /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADFF4260266D02F900752A0E /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD906468266979DB00715AD9 /* Project object */;
 }
